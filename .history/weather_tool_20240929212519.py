@@ -8,7 +8,7 @@ load_dotenv()
 @tool
 def get_weather(city: str) -> dict:
     """
-    This is an LLM Tool that fetches weather data for a given city.
+    This is a docstring that describes what the function does.
     """
     api_key = os.getenv('WEATHER_API_KEY')
     url = f'http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&cnt=6&units=imperial'  # 6 * 3-hour intervals = 18 hours
@@ -26,7 +26,7 @@ def get_weather(city: str) -> dict:
 
     for entry in data['list']:
         temp = entry['main']['temp']
-        precipitation = entry.get('rain', {}).get('3h', 0)  
+        precipitation = entry.get('rain', {}).get('3h', 0)  # precipitation in the last 3 hours
         wind = entry['wind']['speed']
         
         weather_data["temperature"].append(temp)
@@ -37,4 +37,5 @@ def get_weather(city: str) -> dict:
     
 
 if __name__ == "__main__":
+    # Test the function
     print(get_weather("London"))
