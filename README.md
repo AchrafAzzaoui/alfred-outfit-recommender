@@ -34,7 +34,7 @@ This project is a conversational assistant that embodies the persona of Alfred P
 ### Step 1: Clone the Repository
 
 ```sh
-git clone https://github.com/<your-username>/alfred_outfit_recommender.git
+git clone https://github.com/AchrafAzzaoui/alfred_outfit_recommender.git
 cd alfred_outfit_recommender
 ```
 
@@ -70,7 +70,7 @@ python main.py
 
 ## Interacting with Alfred
 
-Once the program is running, Alfred will greet you and ask how he can assist with your wardrobe. You can type in queries such as:
+Once the program is running, Alfred will greet you and ask how he can assist with  wardrobe. You can type in queries such as:
 
 - "What should I wear in Paris today?"
 - "I'm in London. Any advice for what to wear?"
